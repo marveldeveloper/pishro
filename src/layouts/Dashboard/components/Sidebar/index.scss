@@ -1,0 +1,14 @@
+.Dashboard {
+  .Sidebar {
+    overflow-x: hidden;
+    background: linear-gradient(to bottom,var(--bs-primary),#c9634a);
+    .profile {
+      background-color: rgba(0, 0, 0, 0.075);
+    }
+    .slider-item {
+      // border: 1px solid black;
+      padding: 1rem 1.25rem;
+      border-radius: 0 1rem 1rem 0;
+    }
+  }
+}

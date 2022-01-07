@@ -1,0 +1,39 @@
+.Landing {
+  .Sidebar {
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    > .hide-btn {
+      top: 0;
+      right: 0;
+    }
+    > .menu {
+      a,
+      button {
+        box-shadow: none !important;
+        color: inherit;
+        white-space: inherit;
+        &.active {
+          color: var(--bs-primary) !important;
+        }
+      }
+    }
+    &.active {
+      > .hide-btn {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      > .menu {
+        width: 75%;
+      }
+    }
+    &:not(.active) {
+      > .hide-btn {
+        background-color: transparent;
+      }
+      > .menu {
+        width: 0;
+      }
+    }
+  }
+}

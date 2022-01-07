@@ -1,0 +1,10 @@
+.SearchBox {
+  input {
+    all: unset;
+    flex: 1;
+    height: 35px;
+    &::placeholder {
+      color: var(--bs-gray) !important;
+    }
+  }
+}

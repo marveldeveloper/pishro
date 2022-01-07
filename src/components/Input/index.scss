@@ -1,0 +1,19 @@
+.Input {
+  label {
+    word-spacing: normal;
+  }
+  .input-box {
+    column-gap: 0.1rem;
+    padding: 0.1rem;
+    input {
+      all: unset;
+      // width: 100%;
+      flex: 1;
+      height: 35px;
+      border-radius: inherit;
+    }
+  }
+  .message {
+    font-size: 0.75rem;
+  }
+}

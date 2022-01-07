@@ -1,0 +1,28 @@
+.Login {
+  .main-section {
+    min-height: 565px;
+    > img {
+      top: 0;
+      left: 0;
+    }
+    .text-box {
+      min-height: 300px;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: white;
+        bottom: -20px;
+        right: -20px;
+      }
+      &::after {
+        width: 20px;
+        height: 60px;
+      }
+      &::before {
+        width: 60px;
+        height: 20px;
+      }
+    }
+  }
+}

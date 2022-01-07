@@ -1,0 +1,17 @@
+#Notifications {
+  height: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  .alert {
+    transition: 500ms;
+    margin: 0.25rem 0.5rem;
+    opacity: 0;
+    transform: translateY(100%);
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

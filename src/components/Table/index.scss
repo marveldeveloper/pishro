@@ -1,0 +1,12 @@
+.Table {
+  max-width: 100%;
+  table {
+    min-width: 500px;
+    vertical-align: middle;
+    &.table-hover {
+      td {
+        cursor: pointer;
+      }
+    }
+  }
+}

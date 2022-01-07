@@ -1,0 +1,160 @@
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$utilities: (
+  "background-color": (
+    property: background-color,
+    class: bg,
+    responsive: true,
+    values: $theme-colors,
+  ),
+  "border-color": (
+    property: border-color,
+    class: border,
+    responsive: true,
+    values: $theme-colors,
+  ),
+  "border-style": (
+    property: border-style,
+    class: border,
+    responsive: true,
+    values: (
+      solid: solid,
+      dashed: dashed,
+    ),
+  ),
+  "color": (
+    property: color,
+    class: text,
+    responsive: true,
+    values: $theme-colors,
+  ),
+  "opacity": (
+    property: opacity,
+    class: opacity,
+    responsive: true,
+    values: (
+      0: 0,
+      1: 0.1,
+      2: 0.2,
+      3: 0.3,
+      4: 0.4,
+      5: 0.5,
+      6: 0.6,
+      7: 0.7,
+      8: 0.8,
+      9: 0.9,
+      10: 1,
+    ),
+  ),
+  "transition": (
+    property: transition,
+    class: transition,
+    values: (
+      null: all 250ms ease,
+      500: all 500ms ease,
+    ),
+  ),
+  "text-align": (
+    responsive: true,
+    property: text-align,
+    class: text,
+    values: (
+      start: left,
+      end: right,
+      center: center,
+      justify: justify,
+    ),
+  ),
+  "cursor": (
+    property: cursor,
+    class: cursor,
+    values: (
+      pointer: pointer,
+    ),
+  ),
+  "object-fit": (
+    property: object-fit,
+    class: object-fit,
+    values: (
+      cover: cover,
+      contain: contain,
+    ),
+  ),
+  "white-space": (
+    responsive: true,
+    property: white-space,
+    class: space,
+    values: (
+      pre-wrap: pre-wrap,
+      no-wrap: nowrap,
+      break: break-spaces,
+      normal: normal,
+    ),
+  ),
+  "width": (
+    responsive: true,
+    property: width,
+    class: w,
+    values: (
+      fit: fit-content,
+      0: 0%,
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto,
+    ),
+  ),
+  "rounded": (
+    property: border-radius,
+    class: rounded,
+    values: (
+      null: 0.25rem,
+      0: 0,
+      1: 0.1rem,
+      2: 0.2rem,
+      3: 0.3rem,
+      4: 0.4rem,
+      5: 0.5rem,
+      6: 0.6rem,
+      7: 0.7rem,
+      8: 0.8rem,
+      9: 0.9rem,
+      10: 1rem,
+      circle: 50%,
+      pill: 50rem,
+    ),
+  ),
+  "backdrop-blur": (
+    property: backdrop-filter,
+    class: backdrop-blur,
+    values: (
+      null: blur(5px),
+    ),
+  ),
+  "background-gradient": (
+    property: background,
+    class: bg-lg,
+    values: (
+      left-to-right: $gradient-left-to-right,
+      top-to-bottom: $gradient-top-to-bottom,
+    ),
+  ),
+  "font-family": (
+    property: font-family,
+    class: font,
+    values: (
+      fa: "iranyekan-fa",
+      en: "iranyekan-en",
+    ),
+  ),
+  "direction": (
+    property: direction,
+    responsive: true,
+    class: dir,
+    values: (
+      ltr: ltr,
+      rtl: rtl,
+    ),
+  ),
+);

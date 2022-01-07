@@ -1,0 +1,11 @@
+.DownloadSection {
+  > div {
+    border-radius: 2rem;
+    .download-box {
+      max-width: 100%;
+      img {
+        max-width: 33%;
+      }
+    }
+  }
+}

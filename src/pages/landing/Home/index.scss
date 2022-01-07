@@ -1,0 +1,149 @@
+.Landing {
+  .Home {
+    > div {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .MainSection {
+      .h1 {
+        line-height: 150%;
+        word-spacing: 5px;
+      }
+      .download-box {
+        justify-content: space-between;
+        height: 40px;
+        img {
+          height: 100%;
+          max-width: 100px;
+          cursor: pointer;
+        }
+      }
+      .auth-alert {
+        background-color: #efefefbf;
+        width: 300px;
+        bottom: 0;
+        left: 0;
+        .time {
+          top: 10px;
+          left: 10px;
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .Service {
+      .Card {
+        height: 235px;
+      }
+    }
+    .Comments {
+      padding-bottom: 5rem;
+      > .bg-img {
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+      }
+      .user-img-1 {
+        width: 75px;
+        height: 75px;
+        top: 30%;
+        right: 15%;
+      }
+      .user-img-2 {
+        width: 55px;
+        height: 55px;
+        top: 55%;
+        right: 10%;
+      }
+      .user-img-3 {
+        width: 50px;
+        height: 50px;
+        top: 47.5%;
+        right: 20%;
+      }
+      .user-img-4 {
+        width: 65px;
+        height: 65px;
+        top: 65%;
+        right: 15%;
+      }
+      .user-img-5 {
+        width: 70px;
+        height: 70px;
+        top: 27.5%;
+        left: 15%;
+      }
+      .user-img-6 {
+        width: 35px;
+        height: 35px;
+        top: 45%;
+        left: 10%;
+      }
+      .user-img-7 {
+        width: 55px;
+        height: 55px;
+        top: 47.5%;
+        left: 20%;
+      }
+      .user-img-8 {
+        width: 55px;
+        height: 55px;
+        top: 65%;
+        left: 15%;
+      }
+      .carousel {
+        margin-top: 125px;
+        max-width: 100%;
+        width: 750px;
+        .carousel-inner {
+          overflow: visible;
+          .carousel-item {
+            > .bg-img {
+              right: 100px;
+              top: 25px;
+            }
+            img.user-profile {
+              margin-top: -25px;
+              transform: translateY(-25%);
+            }
+          }
+        }
+      }
+    }
+    .NewsAndArticles {
+      .Card {
+        height: 400px;
+        .date {
+          top: 25px;
+          right: -15px;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            top: 0;
+            left: -20px;
+            background-color: var(--bs-primary);
+            clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: var(--bs-primary);
+            filter: brightness(0.75);
+            bottom: -15px;
+            right: 0;
+            clip-path: polygon(100% 0, 0 0, 0 100%);
+          }
+        }
+      }
+    }
+  }
+}

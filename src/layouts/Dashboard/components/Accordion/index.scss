@@ -1,0 +1,52 @@
+.Dashboard {
+  .Sidebar {
+    .Accordion {
+      border-bottom-right-radius: inherit;
+      border-top-right-radius: inherit;
+      .toggler {
+        color: inherit;
+        background-color: transparent;
+        &::before,
+        &::after {
+          content: "";
+          transition: inherit;
+          position: absolute;
+          left: 0;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: transparent;
+          pointer-events: none;
+          opacity: 0;
+        }
+        &::before {
+          top: -30px;
+          box-shadow: -15px 15px 0 var(--bs-light);
+        }
+        &::after {
+          bottom: -30px;
+          box-shadow: -15px -15px 0 var(--bs-light);
+        }
+      }
+      .content {
+        a {
+          color: var(--bs-dark);
+        }
+      }
+      &.active {
+        background-color: rgba(255, 255, 255, 0.25);
+        .toggler {
+          background-color: var(--bs-light);
+          color: var(--bs-primary) !important;
+          &::before,
+          &::after {
+            opacity: 1;
+          }
+          .bi {
+            transform: rotateZ(180deg);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+$white: white;
+$blue: #657fe4;
+$dark-blue: #012766;
+$gray: #c8ccde;
+$light-gray: #ebeff4;
+$violet: #a82070;
+$light-yellow: #f8da92;
+
+$primary: #f0b31d;
+$info: #00beff;
+$success: #78cd36;
+$secondary: #818181;
+$dark: #364251;
+$light: #f1f2f1;
+// $light-primary: #f8db93;
+
+$gradient-left-to-right: linear-gradient(to right, #e09230, $primary);
+$gradient-top-to-bottom: linear-gradient(to bottom, #e09230, $primary);
+
+$alert-border-radius: 1rem;
+$alert-margin-bottom: 0;
+$alert-bg-scale: -85%;
+$alert-border-scale: -0%;
+$alert-color-scale: -100%;
+
+$custom-colors: (
+  "white": $white,
+  "blue": $blue,
+  "dark-blue": $dark-blue,
+  "primary": $primary,
+  "dark": $dark,
+  "light": $light,
+  "violet": $violet,
+  "light-yellow": $light-yellow,
+  "secondary": $secondary,
+  "gray": $gray,
+  "light-gray": $light-gray,
+  "info": $info,
+  "success": $success,
+);

@@ -1,0 +1,98 @@
+#root {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  word-spacing: 2px;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 14px;
+  color: $dark;
+  background-color: $light;
+  font-family: "iranyekan-fa";
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: inherit;
+  }
+}
+button {
+  cursor: pointer;
+  &:disabled {
+    pointer-events: all !important;
+    cursor: not-allowed;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.all-none {
+  all: unset;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 0.5rem;
+}
+.w-fit {
+  width: fit-content;
+}
+.object-fit-contain,
+.object-fit-cover {
+  object-position: center;
+}
+.bi {
+  vertical-align: middle;
+  font-size: inherit;
+}
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+  line-height: 150%;
+}
+.carousel {
+  .carousel-indicators {
+    gap: 0.5rem;
+    bottom: -40px;
+    li {
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      border: 1px solid $secondary;
+      transition: 250ms;
+      @extend .rounded;
+      &.active {
+        background-color: $secondary;
+      }
+    }
+  }
+}

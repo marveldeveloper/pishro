@@ -1,0 +1,16 @@
+.Dashboard {
+  > .sidebar-section {
+    height: 675px;
+    // height: calc(100vh - 2rem);
+    max-height: calc(100vh - 2rem);
+    position: sticky;
+    top: 1rem;
+    z-index: 10;
+  }
+  > main {
+    flex: 1;
+    width: 100%;
+    overflow: visible;
+    // overflow: auto;
+  }
+}
